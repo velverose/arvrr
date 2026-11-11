@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Location AR: места через JavaScript</title>
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="instructions" id="title">Фигура: Куб</div>
+  <button class="switch-btn" data-action="change">Сменить фигуру</button>
+
+  <a-scene vr-mode-ui="enabled: false"
+           arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false"
+           renderer="antialias: true; alpha: true">
+    <a-camera gps-new-camera="gpsMinDistance: 5"></a-camera>
+  </a-scene>
+</body>
+</html>
